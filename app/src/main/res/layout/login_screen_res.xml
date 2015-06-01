@@ -14,38 +14,31 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="CorgiHealth"
         android:id="@+id/textView"
-        android:layout_marginTop="57dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginBottom="61dp"
+        android:layout_above="@+id/username"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Username"
+        android:text="Username:"
         android:id="@+id/textView2"
-        android:layout_marginTop="82dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginBottom="76dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Password"
+        android:text="Password:"
         android:id="@+id/textView3"
-        android:layout_below="@+id/password"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/username"
-        android:layout_below="@+id/textView3"
-        android:layout_alignRight="@+id/password"
-        android:layout_alignEnd="@+id/password"
-        android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password" />
+        android:layout_above="@+id/signin"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="100dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -53,8 +46,9 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/password"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/signin"
+        android:layout_alignStart="@+id/signin" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -62,8 +56,8 @@
         android:layout_height="wrap_content"
         android:text="Sign In"
         android:id="@+id/signin"
-        android:layout_marginTop="87dp"
-        android:layout_below="@+id/username"
+        android:layout_marginBottom="55dp"
+        android:layout_above="@+id/signup"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -86,5 +80,25 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="SampleName"
+        android:ems="10"
+        android:id="@+id/username"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/signin"
+        android:layout_alignStart="@+id/signin" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+
+        android:background="@drawable/meowthh"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+    <!-- http://www.newgrounds.com/art/view/jfdp13/sketchdaily-corgi -->
 
 </RelativeLayout>

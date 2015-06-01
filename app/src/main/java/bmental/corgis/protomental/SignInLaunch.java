@@ -1,10 +1,14 @@
 package bmental.corgis.protomental;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
+
+import bmental.corgis.protomental.dummy.PatientView;
 
 
 public class SignInLaunch extends Activity {
@@ -25,9 +29,9 @@ public class SignInLaunch extends Activity {
         userName = (EditText) findViewById(R.id.username);
         passWord = (EditText) findViewById(R.id.password);
 
-//        findViewById(R.id.signin).setOnClickListener(signIn);
+        findViewById(R.id.signin).setOnClickListener(signIn);
 //        findViewById(R.id.signup).setOnClickListener(signUp);
-//        findViewById(R.id.skip).setOnClickListener(skip);
+        findViewById(R.id.skip).setOnClickListener(skip);
     }
 
     @Override
@@ -48,4 +52,32 @@ public class SignInLaunch extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+    private final View.OnClickListener skip;
+    {
+        skip = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent change = new Intent(getApplicationContext(), PatientView.class);
+                //thisBundle.putSerializable("Player", player);
+                startActivity(change);
+            }
+
+        };
+    }
+    private final View.OnClickListener signIn;
+    {
+        signIn = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent change = new Intent(getApplicationContext(), PatientView.class);
+                //thisBundle.putSerializable("Player", player);
+                startActivity(change);
+            }
+
+        };
+    }
+
+
 }
