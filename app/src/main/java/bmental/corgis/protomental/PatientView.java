@@ -1,4 +1,4 @@
-package bmental.corgis.protomental.dummy;
+package bmental.corgis.protomental;
 
 import android.app.Activity;
 import android.os.Bundle;

@@ -8,8 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
-import bmental.corgis.protomental.dummy.PatientView;
-
 
 public class SignInLaunch extends Activity {
 

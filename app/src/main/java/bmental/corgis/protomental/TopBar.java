@@ -1,4 +1,4 @@
-package bmental.corgis.protomental.dummy;
+package bmental.corgis.protomental;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import bmental.corgis.protomental.R;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class PatientViewFragment extends Fragment {
+public class TopBar extends Fragment {
 
-    public PatientViewFragment() {
+    public TopBar() {
     }
 
     @Override
