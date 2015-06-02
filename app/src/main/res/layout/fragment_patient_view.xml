@@ -36,4 +36,13 @@
         android:layout_toStartOf="@+id/call_help"
         android:background="#ff83ff7d" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Symbols for INFO"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/call_help"
+        android:layout_alignStart="@+id/call_patient" />
+
 </RelativeLayout>

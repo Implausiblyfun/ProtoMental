@@ -2,11 +2,16 @@ package bmental.corgis.protomental;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class SignInLaunch extends Activity {
@@ -27,15 +32,35 @@ public class SignInLaunch extends Activity {
         userName = (EditText) findViewById(R.id.username);
         passWord = (EditText) findViewById(R.id.password);
 
+        SharedPreferences stored = getSharedPreferences("prefs", 0);
+        SharedPreferences.Editor e = stored.edit();
+        e.putString("current_patient", "Patient1");
+
+
+        String[] meow = {"Patient1", "Patient2", "Patient3"};
+
+        Set<String> mySet = new HashSet<String>();
+        Collections.addAll(mySet, meow);
+
+        e.putStringSet("patients", mySet);
+
+
+        e.commit();
+
+
+
         findViewById(R.id.signin).setOnClickListener(signIn);
 //        findViewById(R.id.signup).setOnClickListener(signUp);
-        findViewById(R.id.skip).setOnClickListener(skip);
+//        findViewById(R.id.skip).setOnClickListener(skip);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.sign_in_launch, menu);
+
+
+
         return true;
     }
 
