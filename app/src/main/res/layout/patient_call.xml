@@ -35,29 +35,15 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Patient"
-        android:id="@+id/add_patient"
-        android:textSize="40dp"
-        android:layout_above="@+id/bottomBar"
-        android:layout_centerHorizontal="true" />
-
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BRING BRING"
+        android:id="@+id/textView6"
         android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Continue"
-        android:id="@+id/select_patient"
-        android:textSize="30dp"
-        android:layout_above="@+id/add_patient"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="67dp"
+        android:textSize="100dp" />
 
 </RelativeLayout>

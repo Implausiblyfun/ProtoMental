@@ -57,7 +57,7 @@ public class SignInLaunch extends Activity {
         skip = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent change = new Intent(getApplicationContext(), PatientView.class);
+                Intent change = new Intent(getApplicationContext(), PatientChooserView.class);
                 //thisBundle.putSerializable("Player", player);
                 startActivity(change);
             }
@@ -69,7 +69,7 @@ public class SignInLaunch extends Activity {
         signIn = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent change = new Intent(getApplicationContext(), PatientView.class);
+                Intent change = new Intent(getApplicationContext(), PatientChooserView.class);
                 //thisBundle.putSerializable("Player", player);
                 startActivity(change);
             }

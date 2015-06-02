@@ -17,8 +17,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".PatientChooserView"
+            android:label="Choosing" >
+        </activity>
+
+        <activity
             android:name=".PatientView"
-            android:label="@string/title_activity_patient_view" >
+            android:label="PatientData" >
+        </activity>
+        <activity
+            android:name=".PCallView"
+            android:label="Calling Patient" >
         </activity>
     </application>
 
