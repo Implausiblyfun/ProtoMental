@@ -51,7 +51,7 @@ public class SignInLaunch extends Activity {
 
         findViewById(R.id.signin).setOnClickListener(signIn);
 //        findViewById(R.id.signup).setOnClickListener(signUp);
-        findViewById(R.id.skip).setOnClickListener(skip);
+//        findViewById(R.id.skip).setOnClickListener(skip);
     }
 
     @Override

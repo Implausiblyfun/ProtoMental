@@ -23,6 +23,10 @@ public class PatientChooserView extends CorgiView{
         stored.getString("current_patient", null);
 
         findViewById(R.id.select_patient).setOnClickListener(proceedWithChosen);
+        findViewById(R.id.add_patient).setOnClickListener(addPatient);
+
+
+
         Spinner chooser = (Spinner) findViewById(R.id.spin_choice);
 
 //        String[] meow = {"Patient1", "Patient2", "Patient3"};
@@ -55,6 +59,17 @@ public class PatientChooserView extends CorgiView{
                 startActivity(change);
             }
 
+        };
+    }
+
+    private final View.OnClickListener addPatient;
+    {
+        addPatient = new View.OnClickListener() {
+            public void onClick(View v){
+                Intent change = new Intent(getApplicationContext(), NewPatientName.class);
+                startActivity(change);
+
+            }
         };
     }
 }
