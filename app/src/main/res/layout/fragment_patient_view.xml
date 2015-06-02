@@ -12,14 +12,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
         android:textSize="50dp"
-        android:layout_alignBottom="@+id/imageButton"
+        android:layout_alignBottom="@+id/call_help"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
+        android:id="@+id/call_help"
         android:src="@drawable/small_phone"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -29,11 +29,11 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton2"
+        android:id="@+id/call_patient"
         android:src="@drawable/small_phone"
         android:layout_alignBottom="@+id/textView4"
-        android:layout_toLeftOf="@+id/imageButton"
-        android:layout_toStartOf="@+id/imageButton"
+        android:layout_toLeftOf="@+id/call_help"
+        android:layout_toStartOf="@+id/call_help"
         android:background="#ff83ff7d" />
 
 </RelativeLayout>

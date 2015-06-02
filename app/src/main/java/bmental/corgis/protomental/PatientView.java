@@ -9,7 +9,7 @@ public class PatientView extends CorgiView {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.patient2);
+        setContentView(R.layout.patient);
 
     }
 }

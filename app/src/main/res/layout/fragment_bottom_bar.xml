@@ -16,7 +16,7 @@
         android:text="Patient"
         android:id="@+id/Patient"
         android:textColor="#ffd4fbff"
-        android:textSize="50dp"
+        android:textSize="40dp"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
         android:layout_marginStart="49dp" />
@@ -29,9 +29,8 @@
         android:id="@+id/Info"
         android:textColor="#ffd4fbff"
         android:textSize="40dp"
-        android:layout_alignBottom="@+id/Patient"
-        android:layout_toStartOf="@+id/Tasks"
-        android:layout_marginEnd="58dp" />
+        android:layout_alignTop="@+id/Patient"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,6 +42,6 @@
         android:textSize="40dp"
         android:layout_alignTop="@+id/Info"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="54dp" />
+        android:layout_marginEnd="55dp" />
 
 </RelativeLayout>
