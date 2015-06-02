@@ -47,9 +47,10 @@
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner"
+        android:id="@+id/spin_choice"
+        android:spinnerMode="dialog"
         android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignStart="@+id/add_patient" />
 
     <Button
         android:layout_width="wrap_content"
