@@ -1,9 +1,48 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="bmental.corgis.protomental.BottomBar">
+    android:layout_height="150dp" tools:context="bmental.corgis.protomental.BottomBar">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="@string/hello_blank_fragment"
 
-</FrameLayout>
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:layout_gravity="left|center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Patient"
+        android:id="@+id/Patient"
+        android:textColor="#ffd4fbff"
+        android:textSize="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="49dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Info"
+        android:id="@+id/Info"
+        android:textColor="#ffd4fbff"
+        android:textSize="40dp"
+        android:layout_alignBottom="@+id/Patient"
+        android:layout_toStartOf="@+id/Tasks"
+        android:layout_marginEnd="58dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tasks"
+        android:id="@+id/Tasks"
+        android:textColor="#ffd4fbff"
+        android:textSize="40dp"
+        android:layout_alignTop="@+id/Info"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="54dp" />
+
+</RelativeLayout>
