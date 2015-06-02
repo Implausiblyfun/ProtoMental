@@ -37,7 +37,7 @@
             android:label="Calling Patient" >
         </activity>
         <activity
-            android:name=".NewPatientName"
+            android:name=".NewPatient"
             android:label="Creating New Patient" >
         </activity>
         <activity

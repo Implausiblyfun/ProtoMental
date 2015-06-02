@@ -66,7 +66,7 @@ public class PatientChooserView extends CorgiView{
     {
         addPatient = new View.OnClickListener() {
             public void onClick(View v){
-                Intent change = new Intent(getApplicationContext(), NewPatientName.class);
+                Intent change = new Intent(getApplicationContext(), NewPatient.class);
                 startActivity(change);
 
             }
