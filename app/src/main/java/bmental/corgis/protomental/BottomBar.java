@@ -21,10 +21,25 @@ public class BottomBar extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View thisView = inflater.inflate(R.layout.fragment_bottom_bar, container, false);
-        thisView.findViewById(R.id.Patient).setOnClickListener(new View.OnClickListener() {
-            @Override
+
+        //Here are the listeneres that actually change screens!
+        thisView.findViewById(R.id.Patient).setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 Intent change = new Intent(getActivity().getApplicationContext(), PatientView.class);
+                startActivity(change);
+            }
+        });
+
+        thisView.findViewById(R.id.Info).setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                Intent change = new Intent(getActivity().getApplicationContext(), InfoView.class);
+                startActivity(change);
+            }
+        });
+
+        thisView.findViewById(R.id.Tasks).setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                Intent change = new Intent(getActivity().getApplicationContext(), TaskView.class);
                 startActivity(change);
             }
         });

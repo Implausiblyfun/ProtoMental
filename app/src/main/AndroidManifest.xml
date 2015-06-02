@@ -10,17 +10,12 @@
         <activity
             android:name=".SignInLaunch"
             android:label="@string/title_activity_sign_in_launch" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".PatientChooserView"
             android:label="Choosing" >
         </activity>
-
         <activity
             android:name=".PatientView"
             android:label="PatientData" >
@@ -28,6 +23,27 @@
         <activity
             android:name=".PCallView"
             android:label="Calling Patient" >
+        </activity>
+        <activity
+            android:name=".InfoView"
+            android:label="Calling Patient" >
+        </activity>
+        <activity
+            android:name=".TaskView"
+            android:label="Calling Patient" >
+        </activity>
+        <activity
+            android:name=".EmergencyView"
+            android:label="Calling Patient" >
+        </activity>
+        <activity
+            android:name=".Disclaimer"
+            android:label="@string/title_activity_disclaimer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

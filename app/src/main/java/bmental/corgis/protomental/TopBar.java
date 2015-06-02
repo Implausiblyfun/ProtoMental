@@ -30,6 +30,22 @@ public class TopBar extends Fragment {
                 startActivity(change);
             }
         });
+        thisView.findViewById(R.id.call_help).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent change = new Intent(getActivity().getApplicationContext(), EmergencyView.class);
+                startActivity(change);
+            }
+        });
+        thisView.findViewById(R.id.patient_name).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent change = new Intent(getActivity().getApplicationContext(), PatientChooserView.class);
+                startActivity(change);
+            }
+        });
+
+
 
         return thisView;
     }

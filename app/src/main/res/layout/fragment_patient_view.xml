@@ -10,7 +10,7 @@
 
     <TextView android:text="Patient1" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView4"
+        android:id="@+id/patient_name"
         android:textSize="50dp"
         android:layout_alignBottom="@+id/call_help"
         android:layout_alignParentLeft="true"
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/call_patient"
         android:src="@drawable/small_phone"
-        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignBottom="@+id/patient_name"
         android:layout_toLeftOf="@+id/call_help"
         android:layout_toStartOf="@+id/call_help"
         android:background="#ff83ff7d" />
