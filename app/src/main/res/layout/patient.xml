@@ -35,15 +35,125 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Patient info stuff placeholder"
-        android:id="@+id/textView5"
+    <RelativeLayout
+        android:layout_width="480dp"
+        android:layout_height="480dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="47dp"
         android:layout_below="@+id/topBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
-        android:textSize="60dp" />
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Patient Information"
+            android:id="@+id/textView5"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" placeholder"
+            android:id="@+id/checkBox2"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignEnd="@+id/textView5"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="high-risk"
+            android:id="@+id/checkBox3"
+            android:layout_below="@+id/checkBox2"
+            android:layout_alignStart="@+id/checkBox2"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="affliction"
+            android:id="@+id/checkBox4"
+            android:layout_below="@+id/checkBox3"
+            android:layout_alignStart="@+id/checkBox3"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prior history"
+            android:id="@+id/checkBox5"
+            android:layout_below="@+id/checkBox4"
+            android:layout_alignStart="@+id/checkBox4"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Emergency contacts:"
+            android:id="@+id/textView6"
+            android:layout_marginTop="64dp"
+            android:layout_below="@+id/checkBox5"
+            android:layout_toEndOf="@+id/checkBox2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_below="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="38dp"
+            android:text="Minnesota General"
+            android:background="@drawable/back"
+            android:layout_alignEnd="@+id/textView6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:src="@drawable/small_phone"
+            android:scaleType="center"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:tint="@android:color/holo_red_light"
+            android:tintMode="multiply" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1:"
+            android:id="@+id/textView9"
+            android:layout_alignTop="@+id/editText2"
+            android:layout_toEndOf="@+id/checkBox5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="2:"
+            android:id="@+id/textView10"
+            android:layout_below="@+id/textView9"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignEnd="@+id/textView9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:text="Physician BOB"
+            android:background="@drawable/back"
+            android:layout_below="@+id/textView9"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_alignEnd="@+id/textView6" />
+    </RelativeLayout>
 
 </RelativeLayout>
