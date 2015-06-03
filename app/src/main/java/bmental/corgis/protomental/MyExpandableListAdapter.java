@@ -19,9 +19,11 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
     private final SparseArray<Group> groups;
     public LayoutInflater inflater;
     public Activity activity;
+    private int flag;
 
-    public MyExpandableListAdapter(Activity act, SparseArray<Group> groups) {
+    public MyExpandableListAdapter(Activity act, SparseArray<Group> groups, int info_flag) {
         activity = act;
+        this.flag = info_flag;
         this.groups = groups;
         inflater = act.getLayoutInflater();
     }
@@ -42,7 +44,10 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
         final String children = (String) getChild(groupPosition, childPosition);
         TextView text;
         if (convertView == null) {
-            convertView = inflater.inflate(R.layout.listrow_details, null);
+            if(this.flag == 0){ convertView = inflater.inflate(R.layout.listrow_details_info, null);}
+            else{
+                convertView = inflater.inflate(R.layout.listrow_details_task, null);
+            }
         }
         text = (TextView) convertView.findViewById(R.id.textView1);
         text.setText(children);

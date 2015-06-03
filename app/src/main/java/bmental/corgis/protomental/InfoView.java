@@ -27,8 +27,7 @@ public class InfoView extends CorgiView {
 
         createData();
         ExpandableListView infoList = (ExpandableListView) findViewById(R.id.expandableListView);
-        MyExpandableListAdapter adapter = new MyExpandableListAdapter(this,
-                groups);
+        MyExpandableListAdapter adapter = new MyExpandableListAdapter(this,  groups, 0);
         infoList.setAdapter(adapter);
     }
 
@@ -41,6 +40,9 @@ public class InfoView extends CorgiView {
         Group symptoms = new Group("Symptoms");
         symptoms.children.add("High fever");
         symptoms.children.add("Cold sores");
+
+        groups.append(0, medication);
+        groups.append(1, symptoms);
 
     }
 }
