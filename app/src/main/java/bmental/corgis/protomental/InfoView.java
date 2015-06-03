@@ -33,12 +33,14 @@ public class InfoView extends CorgiView {
     }
 
     public void createData() {
-        for (int j = 0; j < 5; j++) {
-            Group group = new Group("Test " + j);
-            for (int i = 0; i < 5; i++) {
-                group.children.add("Sub Item" + i);
-            }
-            groups.append(j, group);
-        }
+        Group medication = new Group("Medication");
+        medication.children.add("Medication X");
+        medication.children.add("Medication Y");
+        medication.children.add("Medication Z");
+
+        Group symptoms = new Group("Symptoms");
+        symptoms.children.add("High fever");
+        symptoms.children.add("Cold sores");
+
     }
 }

@@ -35,15 +35,13 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
+    <ExpandableListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Task place hold"
-        android:id="@+id/textView5"
+        android:id="@+id/expandableListViewTask"
+        android:childDivider="#D0D0D0"
         android:layout_below="@+id/topBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
-        android:textSize="60dp" />
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bottomBar" />
 
 </RelativeLayout>
