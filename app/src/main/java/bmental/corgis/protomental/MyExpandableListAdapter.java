@@ -51,10 +51,15 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
         }
         text = (TextView) convertView.findViewById(R.id.textView1);
         text.setText(children);
+
+        String toastyText = "This would pull up a closer view with the ability to add info!";
+        if(this.flag == 0){toastyText = "This would redirect to an appropriate website if there is internet. Otherwise will go to a small local set of information if possible.";}
+        final String toastedText = toastyText;
+
         convertView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(activity, children,
+                Toast.makeText(activity, toastedText,
                         Toast.LENGTH_SHORT).show();
             }
         });

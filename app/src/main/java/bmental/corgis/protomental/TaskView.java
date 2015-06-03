@@ -26,6 +26,8 @@ public class TaskView extends CorgiView {
         ExpandableListView infoList = (ExpandableListView) findViewById(R.id.expandableListViewTask);
         MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups, 1);
         infoList.setAdapter(adapter);
+        infoList.expandGroup(0);
+        infoList.expandGroup(1);
     }
 
     public void createData() {

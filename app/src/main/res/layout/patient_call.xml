@@ -38,12 +38,50 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="BRING BRING"
-        android:id="@+id/textView6"
-        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Patient1"
+        android:id="@+id/Contact3"
+        android:textSize="40dp"
+        android:layout_below="@+id/topBar"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="67dp"
-        android:textSize="100dp" />
+        android:layout_marginTop="212dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:id="@+id/call3"
+        android:layout_marginEnd="30dp"
+        android:layout_alignBottom="@+id/info3"
+        android:layout_alignEnd="@+id/topBar" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="FakeChester, MN, 222-222-2222"
+        android:id="@+id/info3"
+        android:textSize="30dp"
+        android:layout_marginStart="31dp"
+        android:layout_alignBottom="@+id/Contact3"
+        android:layout_toEndOf="@+id/Contact3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Reminder Info:"
+        android:id="@+id/textView8"
+        android:textSize="40sp"
+        android:layout_above="@+id/editText"
+        android:layout_alignStart="@+id/info3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_marginBottom="54dp"
+        android:textSize="32sp"
+        android:text="Nickname: Bob, hates cats, dont bore with story about trash again"
+        android:layout_above="@+id/bottomBar"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
